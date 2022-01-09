@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function showResult() {
+                x = document.forms["myform"]["firstname"].value;
+                y = document.forms["myform"]["lastname"].value;
+                document.forms["myform"]["result"].value = x + " " + y;
+                document.forms["myform"]["firstname"].value = "";
+                document.forms["myform"]["lastname"].value = "";
+                document.forms["myform"]["email_add"].value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="GET" name="myform">
+            First Name: <input type="text" name="firstname" required placeholder="Enter First Name"/>
+            <br/>
+            Last Name: <input type="text" name="lastname" placeholder="Enter Last Name"/>
+            <br/>
+            <br>
+            Email: <input type="email" name="email_add" autofocus="" placeholder="Enter Email"/>
+            <br/>
+            <br>
+            <input type="button" Value="Results" onclick="showResult();"/>
+            <output name="result"></output>
+        </form>
+    </body>
+</html>

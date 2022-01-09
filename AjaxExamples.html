@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           
+                var xmlhttp;
+                if (window.XMLHttpRequest) {
+                    xmlhttp = new XMLHttpRequest();
+                }else{
+                    xmlhttp = new ActiveXObject("Microsot.XMLHTTP");
+                }
+                function loadXMLDoc(){
+                // AJAX Script
+                
+                xmlhttp.onreadystatechange = function (){
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        // When the responseText property sends a string as a response then we can use the function as below.
+                        document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                        // When the response from the server is an XML, then we need to parse it as an XML Object by using responseXML property.
+                        xmlDoc = xmlhttp.responseXML;
+                        txt = "";
+                        x = xmlDoc.getElementsByTagName("ARTIST");
+                        for(i=0; i<x.length; i++){
+                            txt = txt + x[i].childNodes[0].nodeValue + "<br>"
+                        }
+                        document.getElementById("myDiv").innerHTML = txt;
+                    }
+                xmlhttp.open("GET","index.html", true);
+                // xmlhttp.open("GET","demo_get.asp?t="+Math.random(), true);
+                // xmlhttp.open("GET","demo_get.asp?fname=Shameeulla&lname=Abusali", true);
+                xmlhttp.send();
+
+                // xmlhttp.open("POST","ajax_test.asp",true);
+                // setRequestHeader adds the HTTP Header to the request Header
+                // xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+                // xmlhttp.send("fname=Shameeulla&lname=Abusali")
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="myDiv">
+            <h2>Let AJAX Change this Text</h2>
+        </div>
+        <button type="button" onclick="loadXMLDoc()">
+            Change Content
+        </button>
+    </body>
+</html>

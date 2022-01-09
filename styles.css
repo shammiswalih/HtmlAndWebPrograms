@@ -1,0 +1,36 @@
+pre{
+    font-weight: bolder;
+    font-size: 120%;
+    
+}
+#prog_code {
+    border: 1px solid black;
+    padding: 10 px;
+    margin: 30px
+}
+
+.error {
+    font-weight: bolder;
+    color: lightgreen
+}
+table, td, th{
+    border: 1px solid black;
+    border-width: 1px;
+    color: darkgreen;
+    text-align: left;
+    border-spacing: 5px;
+}
+
+#t01 tr :nth-child(even){
+    background-color: #ddd;
+}
+#t01 tr :nth-child(odd){
+    background-color: #fff;
+}
+
+li{
+    color: darkmagenta;
+}
+ul{
+    display: inline;
+}

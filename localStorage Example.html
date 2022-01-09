@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            //StorelocalStorage.setItem("lastname","Shameeulla");
+            //document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        </p>
+        <p>
+            if(localStorage,clickcount){
+                localStorage.clickcount = Number(localStorage.clickcount+1;
+            }else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + "time(s)"
+        </p>
+        <p>
+            if(sessionStorage.clickcount){
+                sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            }else{
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have click the button " + sessionStorage.clickcount +"time(s) in this session";
+        </p>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <body>
+        <form action="/Layout Using Bootstrap.html" method="POST" accept-charset="utf-8" autocomplete="on" enctype="application/x-www-form-urlencoded" novalidate="" target="_blank">
+            <fieldset>
+                <legend>
+                    Personal Information:
+                </legend>
+                First Name:
+                <br/>
+                <input type="text" name="firstName" placeholder="First Name"/>
+               <br/>
+                Last Name:
+               <br/>
+               <input type="text" name="lastName" placeholder="Family Name"/>
+               <br/>
+               Brith Date: 
+               <input type="datetime-local" name="bday" max="2000-12-31"/>
+               <br/>
+               Birth Day Month and Year:
+               <input type="month" name="bdayMonth"/>
+               <br/>
+               Sex:
+               <input type="radio" name="sex" checked ="" value="male"/> Male
+               <input type="radio" name="sex" value="female"/> Female
+               <br/>
+               Email:
+               <input type="email" name="emailadd"/>
+               <br/>
+               Select Your Favourite Color:
+               <input type="color" name="favcolor"/>
+               <br/>
+               Qualification:
+               <select name="certificate" id="cert">
+                   <option value="Bachelor">Bachelor's Degree</option>
+                   <option value="School" selected="">High School</option>
+                   <option value="Master">Master Degree</option>
+               </select>
+               <br/>
+               <textarea name="comments" id="comments" cols="30" rows="10">Enter Comments Here...</textarea>
+               <br/>
+               <input type="submit" name="Submit"/>
+               <input type="submi" name="SubmitNoValidate" formnovalidate="" value="Submit without Validating">
+               </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend> Broswsers</legend>
+                <input list="browsers"/>
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+                <br/>
+                Username:
+                <input type="text" name="Username">
+                <br/>
+                Encryption:
+                <keygen name="security">
+                <input type="submit"/>
+                </keygen>
+            </fieldset>
+        </form>
+        <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+                <legend>Output Form Elment Eg.</legend>
+                0
+                <input type="range" id="a" name="a" value="50"/>
+                100 +
+                <input type="range" id="b" name="b" value="50"/>
+                =
+                <output for="a b" name = "x"></output>
+                <br/>
+                <br/>
+                <input type="submit"/>
+            </fieldset>
+        </form>
+        <form action="" id="form1">
+            <fieldset>
+                <legend>Read Only Form</legend>
+                <input disabled="" type="text" name="firstName" readonly="" value="Shameeulla" size="15" />
+                <input disabled="" type="text" name="lastName" readonly="" value="Abusali" size="15" />
+                <input type="text" name="wifeName" value="Sefwah Usman Sheikh" maxlength="10">
+            </fieldset>
+        </form>
+        lastName:
+        <input type="email" form="form1" name="emailadd">
+    </body>
+</html>

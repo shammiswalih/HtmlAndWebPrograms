@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes example {
+                from{
+                    background-color: red;
+                }
+                to{
+                    background-color: yellowgreen;
+                }
+            }
+            @keyframes example2 {
+                0%{
+                    background-color: pink;
+                    left: 0px;
+                    top: 0px;
+                }
+                25%{
+                    background-color: yellow;
+                    left: 200px;
+                    top: 0px;
+                }
+                50%{
+                    background-color: blue;
+                    left: 200px;
+                    top: 200px;
+                }
+                75%{
+                    background-color: green;
+                    left: 0px;
+                    top: 200px;
+                }
+                100%{
+                    background-color: pink;
+                    left: 0px;
+                    top: 0px;
+                }
+                
+            }
+            .div1{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s;
+            }
+            .div2{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: pink;
+                animation-name: example2;
+                animation-duration: 4s;
+                animation-delay: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+                resize: both;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+
+        </div>
+        <div class="div2">
+
+        </div>
+    </body>
+</html>

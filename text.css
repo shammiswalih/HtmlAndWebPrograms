@@ -1,0 +1,62 @@
+body{
+    color: black;
+}
+h1{
+    color: #113311;
+    text-align: right;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 50px;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+img{
+    float: left;
+}
+
+a :link{
+    color: blue;
+}
+a :hover{
+    color: red;
+}
+a :visited{
+    color: black;
+    text-decoration: underline;
+}
+a :active{
+    color: red;
+    
+}
+
+p :first-child i{
+    color: blue;
+    text-overflow: clip;
+    word-wrap: keep-all;
+    word-break: break-all;
+    overflow: visible;
+}
+p ::first-line{
+    color: #113311;
+    font-variant: small-caps;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+p ::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+h1 ::before{
+    content: url(/BGImages/Ball.jpg);
+}
+::selection{
+    color: red;
+    background: yellow;
+}
+div{
+    box-shadow: 10px 10px grey;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}

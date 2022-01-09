@@ -1,0 +1,97 @@
+<!-- Bookmark using id and anchor  a href for using the links in the same page-->
+<!-- To Make Tables we make use table,th, tr, td tags -->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <style>
+            a:link {color: green;}
+            a:visited{color: blue;}
+            a:hover{color: red;}
+            a:active{text-decoration: underline;}
+            p {font-family: Georgia, 'Times New Roman', Times, serif; color: lightsalmon;}
+        </style>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body style="background-color: grey">
+        <h1>My First Heading</h1>
+        <p> My First Paragh</p>
+        <a href="http://www.google.com"><img alt="www.google.com" height="50" src="googleLogo.png" width="105"></a>
+        <br />
+<!-- target = "_blank" will open the link in a new Tab (_top, _self,_parent) -->
+        <a href="http://www.FaceBook.com" target="_blank">This is link to FaceBook</a>
+        <hr />
+        <blockquote>
+            <p title="About W3Schools" style="color: goldenrod;text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <i> <b>W3Schools</b> a <strong style="color: indigo;">web developer's</strong>  site.</i>
+            It provides tutorials and references coverignamy aspects of web programming, including 
+            <em>HTML, CSS, JavaScript, XML, SQL, PHP, ASP, etc.</em>
+            </p>
+        </blockquote>
+
+        <pre id = prog_code style="font-size: 120%;"> 
+            It provides tutorials and references coverignamy aspects of web programming, including 
+            <q><small><mark><del> HTML,</del> <ins>CSS</ins>, <sub>JavaScript,</sub> <sup>XML,</sup>SQL, <abbr title="HyperText PreProcessor">PHP</abbr>, ASP, etc.</mark></small></q>
+        </pre>
+        <code>
+            <pre class="error">
+                person = {
+                            firstName = "Shameeulla",
+                            lastName = "Abusali",
+                            age = 32
+                        }
+            </pre>
+        </code>
+        <samp></samp>
+        <kbd></kbd>
+        <p>
+            Einstien Wrote:
+            <br />
+            E = m c <sup>2</sup>
+        </p>
+        <address dir="rtl">
+            Written by Shameeulla Abusali
+            <br />
+            <cite>Residencial Address:</cite>
+            <br />
+            "Sarah Residency", North Sulthan Road, Hejamadi
+            <br />
+        </address>
+        <table id="t01">
+            <caption>Personal Details</caption>
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Shameeulla Abusali</td>
+                <td>32</td>
+                <td>Jubail, Saudi Arabia</td>
+            </tr>
+            <tr>
+                <td>Mohammed Ashraf Ali</td>
+                <td>43</td>
+                <td>Dammam, Saudi Arabia</td>
+            </tr>
+        </table>
+        <ul style="list-style-type:square;">
+            <caption>Hot Drinks</caption>
+            <li>COffee</li>
+            <li>Tea</li>
+            <li>Black Tea</li>
+        </ul>
+        <ol type="A">
+            <caption>Hot Drinks</caption>
+            <li>COffee</li>
+            <li>Tea</li>
+            <li>Black Tea</li>
+        </ol>
+        <dl>
+            <dt>Coffee</dt><dd>- Black Hot Drink</dd>
+            <dt>Tea</dt><dd>- Tea with Milk</dd>
+        </dl>
+
+    </body>
+</html>

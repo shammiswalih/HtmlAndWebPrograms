@@ -1,0 +1,139 @@
+W3C - World Wide Web Consortium
+WHATWG - Web Hypertext Application Technology Working Group
+DOM - Document Object Model
+JSON - JavaScript Object Notation
+RWD - Responsive Web Designing
+URL - Uniform Resource Locator
+SVG - Scalable Vetor Graphics
+ES - ECMA Script International (A Scripting Language Standard )
+ECMA - European Computer Manufacturers Association
+SGML - Standard Generalized Markup Language
+MPEG - Moving Pictures Epert Group
+AVI - Audio Vedio Interface
+WMV/WMA - Windows Media Vedio / Audio
+MIDI - Musical Instrument Digital Interface
+DTD - Document Type Definition
+XML - Extensible Markup Language
+TCP/IP - Transmission Control Protocol / Internet Protocol
+IETF - Internet Engineering Task Force
+
+In CSS there are two types of font family names: Generic Family (Eg. Serif/Monospace) and Font Family (Eg. Times New Roman / Arial)
+
+New Features in HTML5:
+1. New Semantic Elements - <header>. <footer>, <section>.
+2. New attributes have been introduced for <input> tag in Form2.0
+3. Persistent Local Storage: 
+4. WebSocket: Bidirectional COmmunication Technology for Web Applicaitons
+5. Server-Sent Events: Events which flow from Server to Web Browsers
+6. Canvas: This supports two dimensional drawing surface than can be programmed using javascript
+7. Audio & Vedio: Audio/Vedio can be embedded without using third party plugins
+8. GeoLocation: Option to share thier physical location with your web Browsers
+9. Microdata: Options to create own Vocabularies beyond HTML5 and extend
+10. Drag and Drop: Drag and Drop Items from one location to another location on the same webpage
+
+AJAX: Asynchronous JavaScript and XML, is used for exhanging Data between Server and Browser without reloading the whole page.
+AJAX is used for creating fast and dynamic webpages
+
+(XMLHTTPRequest -> send HTTPRequest Asynchronously -> server process the Reqeust -> Send Back to Browser -> Process the Response by JavaSript ->Update the Content)
+    AJAX Uses the Combination of: XMLHTTPRequest, JavaScript/DOM, CSS, XML. 
+
+xmlhttp.open(metohd,url,async)
+xmlhttp.send(string)
+
+GET vs POST (Get is simpler and faster than POST / POST is used for larger amount of data / For user input better to use POST becuase it is secure and Robust)
+- XMLHTTPRequest.responseText/responseXML
+- onReadyStateChange: Has a function which automatically calls whenever the readyState property changes
+- readyState: Status ranges from 0-4. 0(Not Initialised), 1(Server Connection Established), 2(Request Recieved), 3(Processing Reqeust), 4(Request is fineshed and response is ready)
+- status: 200 (OK) / 404 (Page Not Found)
+
+HTML: Block level Elements and Inline Elements
+IFrame: Used to Display a WebPage within a WebPage
+
+In the <head> we can include the following tags:
+- title: Title of the WebPage
+- link: Usually to link the StyleSheet ('rel')
+- script: Javascript / php part, to make the webpage dynamic (getElementByID("name").innerHTML)
+- meta: name, charset, http=equiv(for reloading the webpage in intervals)
+- base: specify base URL and base targets for all relative URLs
+
+UTF-8 charset contains almost all symbols in the World
+
+URL Format: scheme://hostname.domain:port/path/filename 
+            - scheme (http)
+            - hostname (www)
+            - domain (w3schools.com)
+            - Path at the Server
+            - name of the File at the server
+
+URL Encoding: URLs are sent over internet in ASCII format, so the URLs has to converted into ASCII format. This process is called URL Encoding
+              For Eg. A space cannot be present in the encoded URL, so it is replaced with %20 (Hexadecimal) or + (plus)
+
+<input> element is important element which is used to take the input from the users in the Forms, or as a matter of fact for anything else.
+
+Default width of textField in the Forms is 20px
+New Form elements added in HTML5: keygen, datalist, output
+<input> types in Forms: text, password, submit, range, radio, checkbox, button, search, datetime, datetime-local, email, month, number, url and many more 
+<input> restrictions/ attributes: disabled, max, min, maxlength, pattern, readonly, required, size, step, value
+
+New Attributes for <input> in HTML5: autocomplete, autofocus, form, formaction, formenctype, formmethod, formnovalidate, formtarget, height and width, list, min and max, multiple, pattern (regexp), placeholder, required, step
+New Attributes for <form> in HTML5: autocomplete, novalidate
+New Attributes which can used in almost all tags in HTML5: accesskey, align, background, bgcolor, class, contenteditable, contextmenu, data-XXXX (Custom Attributes), draggable, id, item, itemprop, spellcheck, subject, tabindex, valign, width, title
+New structural elements in HTML5: article, aside, bdi, details, dialog, figcaption, figure, footer, header, main, mark, meter, nav, progress, rp, menuitem, ruby, section, summary, time, wbr
+New Media element in HTML5: audio, vedio, embed (plugins), source, track 
+
+In XML there are no predefined tags, you must define your own tags. XML describes the Data, while HTML displays the data.
+
+Interesting New Features of HTML5:GeoLocation, Deag and Drop, Local Storage, Application Cache, Web Workers, SSE
+
+Important methods of javascript in HTML:
+1. document.createElement()
+
+<canvas>: Defines graphic drawing using JavaScript
+<svg>: Defines graphic drawings using SVG, it is XML based.
+
+Semantic: Study of Meanings of Words and phrases in a Language. Semantic elements are elements with Meanings.
+React is a front end library developed by facebook. ReactJS is a JavaScript Library that allows us to create reuseable UI components.
+Angular 8 is an opensource, TpeScript based frontend web Application framework. Angular 8 has been released by Google's Angular Community.
+TypeScript is a programming language developed by MicroSoft for developing large application and transcompiles to JavaScript.
+jQuery is a JavaScript Library, i simplifies JavaScript Programming. 
+BabelJS is a JavaSript translator which transpiles (transcompiles) new features into old language. With this, the new features can be run in both the old and new browsers.
+
+There are four methods of postion in styles: 
+1. fixed
+2. absolute
+3. relative
+4. inherit
+
+In CSS, a psuedoClass is used to define a special state of an element. Eg. for psuedoClass active, checked, desabled, enabled, first-child, frist-of-child, hover, in-range, invalid, lang(language) last-child, last-of-type, link, not(selector), nth-child(n), noth-last-child(n), nth-last-of-type(n), only-of-type, only-child, optional, read-only, out-of-range, target, valid, visited
+Psuedo Class elements: ::after, ::before, ::first-letter, ::first-line, ::seletion
+Psuedo element is to style the specified part of the element. It can be used to style the letter, or line or an element. Insert content before after the content of the element.
+
+An image sprite is a collecftion of images put into a single image. (GIF)
+In CSS media type is used normally to specify the format in which the print in Screen has to look and how it has look on a printed sheet.
+And attribute selector in CSS styling, is used to format the specified attribute within an element. Eg. [attribute~ = "value"]
+Attributes selector can also be used for selecting the elements knowing the part of the elements class name (Like, [class ^= "top"])
+CSS Display: block/inline/none. CSS Max-Width Value. 
+If the content of any element will overflow the size of any container, then we use the attribute overflow: auto, as to make room for the content outside the container's size. 
+We can use display=Inline-Block, instead of Float=left.
+
+Important CSS3 Modules are:
+1. Selectors
+2. Box Model
+3. Background and Borders
+4. Image values and Replaced Contents
+5. Text Effects
+6. 2D/3D Transformations
+7. Animations
+8. Multiple Column Layout
+9. User Interface
+
+Other Important features in CSS3: Rounded Corners (border-radius), Multiple Background (background-image=url(),url())
+
+CSS3 Background Properties: Background-size = Contain / Cover, Background-clip = content-Box, Background-image, background-origin, background-size.
+CSS3 Gradient Properties: Linear-Gradient, Radial-Gradient, Repeating-leniar-gradient, Repeating-radial-gradient
+CSS3 Shadows: text-shadow / box-shadow
+Text Properties: text-overflow / word-wrap / word-break
+Different Font Types: TTF (TrueType Fonts),OTF(OpenType Fonts), WOFF 2.0(Web OpenType Fonts), SVG Fonts/Shopes (Scalar Vector Graphics), EOT (Embedded OpenType Fonts)
+
+Animate.CSS
+Google Fontsœ
